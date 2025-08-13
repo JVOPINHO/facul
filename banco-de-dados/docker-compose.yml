@@ -1,0 +1,10 @@
+services:
+  db-pg:
+    image: postgres
+    container_name: facul-as62c
+    ports:
+      - ${DB_PORT}:5432
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_DB=${DB_SCHEMA}
+      - POSTGRES_HOST_AUTH_METHOD=trust
