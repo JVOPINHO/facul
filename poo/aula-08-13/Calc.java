@@ -21,7 +21,7 @@ public class Calc {
         return x * y;
     }
     
-    public static int div(int x, int y) {
+    public static double div(int x, int y) {
         return x / y;
     }
 }
