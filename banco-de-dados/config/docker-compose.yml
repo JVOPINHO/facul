@@ -1,0 +1,11 @@
+services:
+  db-pg:
+    image: mysql
+    container_name: facul-as62c
+    ports:
+      - 3307:3307
+    environment:
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_USER_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_TCP_PORT=3307
